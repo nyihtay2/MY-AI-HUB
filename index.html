@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="my">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10182b"><title>MY AI HUB</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand"><div class="logo">✦</div><div><h1>MY AI HUB</h1><p>သင့် AI သုံးမျိုး၊ တစ်နေရာတည်း</p></div></div>
+    <button id="clearBtn" class="ghost" title="မှတ်တမ်းရှင်းရန်">မှတ်တမ်းရှင်းရန်</button>
+  </header>
+  <main>
+    <section class="intro"><span class="eyebrow">YOUR PERSONAL AI WORKSPACE</span><h2>ဘာမေးချင်လဲ?</h2><p>AI တစ်ခုချင်းစီကို မေးနိုင်သလို သုံးခုလုံးကို တစ်ပြိုင်နက် မေးနိုင်ပါတယ်။</p></section>
+    <section class="chooser">
+      <label class="choice"><input type="radio" name="mode" value="all" checked><span class="choice-card"><b>✦ AI သုံးမျိုးလုံး</b><small>အဖြေသုံးခု နှိုင်းယှဉ်မယ်</small></span></label>
+      <label class="choice"><input type="radio" name="mode" value="openai"><span class="choice-card"><b>◉ ChatGPT</b><small>OpenAI</small></span></label>
+      <label class="choice"><input type="radio" name="mode" value="gemini"><span class="choice-card"><b>✧ Gemini</b><small>Google</small></span></label>
+      <label class="choice"><input type="radio" name="mode" value="llama"><span class="choice-card"><b>◈ Meta Llama</b><small>Llama model</small></span></label>
+    </section>
+    <section id="results" class="results"><div class="empty"><div class="empty-icon">✧</div><b>မေးခွန်းတစ်ခု စတင်မေးပါ</b><p>AI ရဲ့အဖြေတွေ ဒီနေရာမှာ ပေါ်လာပါမယ်။</p></div></section>
+    <form id="chatForm" class="composer">
+      <textarea id="prompt" rows="2" placeholder="မြန်မာလို မေးခွန်းရေးပါ..." required></textarea>
+      <div class="compose-bottom"><span id="hint">Enter = ပို့မည် · Shift + Enter = စာကြောင်းသစ်</span><button id="sendBtn" type="submit">မေးမယ်&nbsp; ➤</button></div>
+    </form>
+    <p class="disclaimer">AI အဖြေများ မှားယွင်းနိုင်ပါသည်။ အရေးကြီးသောအချက်အလက်များကို ပြန်လည်စစ်ဆေးပါ။</p>
+  </main>
+</div>
+<script src="/app.js"></script>
+</body></html>
